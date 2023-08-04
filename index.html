@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinaryWhizBot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<script src="env.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.png" id="logo" alt="Logo">
+        <a href="/"><span>CulinaryWhizBot</span></a>
+    </header>
+
+    <main>
+        <section id="setup-container">
+            <div class="setup-inner">
+                <img src="images/robot with chef 0.png"  alt="left-image">
+                <div class="speech-bubble-ai" id="speech-bubble-ai">
+                    <p id="text-box">
+                        Enter your ingredients and let me whip up a recipe for you.  
+                    </p>
+                </div>
+            </div>
+            <div class="setup-input-container" id="setup-input-container">
+                <textarea  id="setup-textarea" placeholder="Rice,Oil,Chicken,Potato,Coriander . . . . "></textarea>
+                <button class="send-btn" id="send-btn" aria-label="send">
+                     <p>Cook it Up!</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="output-container" id="output-container">
+            <p id="summary"></p>
+            <div id="output-img-container" class="output-img-container"></div>
+            <h1 id="output-title"></h1>
+            <h2 id="output-stars"></h2>
+            <p id="output-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 CulinaryWhizBot All Rights Reserved
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
